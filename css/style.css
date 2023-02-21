@@ -1,1 +1,5 @@
-/*# sourceMappingURL=style.css.map */
+article {
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: #262626;
+}/*# sourceMappingURL=style.css.map */
