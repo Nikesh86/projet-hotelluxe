@@ -1,0 +1,14 @@
+.chambres {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    font-family: 'Barlow', sans-serif;
+}
+
+
+.spa {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    font-family: 'Barlow', sans-serif;
+}

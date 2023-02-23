@@ -1,0 +1,16 @@
+.tuile {
+    position: relative;
+
+
+    figcaption {
+        position: absolute;
+        inset: 0;
+        color: $texte-clare;
+        display: flex;
+        align-items: top;
+        font-size: 2em;
+        writing-mode: vertical-rl;
+        transition: all 1s cubic-bezier(0.215, 0.610, 0.355, 1);
+
+    }
+}

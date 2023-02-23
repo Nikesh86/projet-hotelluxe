@@ -1,5 +1,196 @@
-article {
+@import './vendors/flaticons.css';
+@import './vendors/themify-icons.css';
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background-color: #282828;
+  margin-left: 300px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Barlow", sans-serif;
+}
+
+body {
+  height: 500vh;
+}
+body .nav-bar {
+  background-color: #212121;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100%;
+  z-index: 3000;
+  color: aliceblue;
+  padding-top: 60px;
+  overflow-x: hidden;
+}
+body .nav-bar .nav-bar-title {
+  display: flex;
+  flex-direction: column;
+  font-size: 10px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+body .nav-bar .nav-bar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 70px;
+  font-family: "Barlow", sans-serif;
+}
+body .nav-bar .nav-bar-menu .activ {
+  color: #8e6731;
+}
+body .nav-bar .nav-bar-menu span {
+  color: gray;
+  font-size: 14px;
+  padding-left: 35px;
+  transition: 0.6s ease;
+}
+body .nav-bar .nav-bar-menu span:hover {
+  color: #977e5b;
+  transform: scale(0.9) ease;
+  text-shadow: 1px 1px 10px rgba(142, 103, 49, 0.2);
+  font-size: 16px;
+}
+body .nav-bar .nav-bar-title h1 {
+  font-family: "Gilda Display", serif;
+  font-size: 27px;
+  color: #8e6731;
+  letter-spacing: 0.15em;
+  font-weight: 100;
+}
+body .nav-bar .nav-bar-title h2 {
+  font-size: 11px;
+  letter-spacing: 0.6em;
+  margin-top: 4px;
+  font-family: "Barlow Condensed", sans-serif;
+  color: rgb(255, 255, 255);
+}
+body .nav-bar .nav-bar-title a .nav-bar-star {
+  display: block;
+  color: #8e6731;
+  margin-bottom: 10px;
+  font-size: 9px;
+  letter-spacing: 0.25em;
+}
+body .nav-bar .nav-bar-reservation {
+  display: flex;
+  gap: 10px;
+  padding-left: 35px;
+  font-family: "Barlow", sans-serif;
+}
+body .nav-bar .nav-bar-reservation .nav-bar-number #information-reservation {
+  font-size: 15px;
+  margin-bottom: 5px;
+  color: gray;
+}
+body .nav-bar .nav-bar-reservation .nav-bar-number #num-tel {
+  color: #8e6731;
+  font-size: 24px;
+  font-family: "Barlow Condensed", sans-serif;
+}
+body .nav-bar .nav-bar-reservation .nav-bar-phone {
+  color: #8e6731;
+  font-size: 34px;
+  padding-top: 10px;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.2509803922);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #ff0000;
+  border-radius: 15px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(253, 202, 0);
+}
+
+.chambres {
   display: grid;
-  grid-template-columns: auto auto;
-  background-color: #262626;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  font-family: "Barlow", sans-serif;
+}
+
+.spa {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  font-family: "Barlow", sans-serif;
+}
+
+.tuile {
+  position: relative;
+}
+.tuile figcaption {
+  position: absolute;
+  inset: 0;
+  color: #f6f6f6;
+  display: flex;
+  align-items: top;
+  font-size: 2em;
+  writing-mode: vertical-rl;
+  transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
 }/*# sourceMappingURL=style.css.map */

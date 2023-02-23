@@ -1,5 +1,38 @@
-article{
-    display: grid;
-    grid-template-columns: auto auto;
-    background-color: #262626;
-}
+
+
+// //import vendors//
+@import './vendors/flaticons.css';
+@import './vendors/themify-icons.css';
+@import './vendors/reset';
+
+
+@import './abstracts/variables';
+// //import theme//
+// @import './themes/dark-theme';
+// @import './themes/flat-theme';
+
+
+// // import layout//
+@import './layout/body';
+// @import './layout/article';
+// @import './layout/footer';
+// @import './layout/header';
+// @import './layout/sidebar';
+ @import './layout/navbar';
+ @import './layout/article';
+ @import './layout/grid';
+ @import './components/tuile';
+
+// // import pages //
+
+// @import './pages/product';
+
+
+
+
+
+
+
+
+
+
