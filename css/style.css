@@ -179,6 +179,106 @@ body::-webkit-scrollbar-thumb:hover {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
   font-family: "Barlow", sans-serif;
+  color: white;
+}
+.spa p {
+  color: #8e6731;
+  font-size: 15px;
+  padding: 20px;
+}
+.spa a {
+  color: wheat;
+  background-color: #8e6731;
+  padding: 10px;
+}
+.spa h2 {
+  font-size: 30px;
+  padding: 20px;
+}
+
+.Options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 50px;
+  color: white;
+  gap: 10px;
+  height: 300px;
+  margin: 50px;
+  padding: 50px;
+}
+.Options .opt {
+  font-size: 15px;
+  font-family: "Barlow Condensed", sans-serif;
+}
+.Options .opt H2 {
+  font-size: 50px;
+  padding: 20px;
+}
+.Options .opt .flaticon-call,
+.Options .opt a {
+  color: #8e6731;
+  font-size: 20px;
+}
+.Options .box1 {
+  background-color: #303030;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  font-size: 15px;
+  font-family: "Barlow Condensed", sans-serif;
+}
+.Options .box1 .ti-check, .Options .box1 .ti-close {
+  color: #8e6731;
+  margin: 10px;
+}
+.Options .box2 {
+  background-color: #303030;
+  padding: 20px;
+  margin: 20px;
+  font-family: "Barlow Condensed", sans-serif;
+  text-align: center;
+}
+.Options .box2 .ti-check, .Options .box2 .ti-close {
+  color: #8e6731;
+  margin: 10px;
+}
+.Options h3 {
+  font-size: 25PX;
+  padding: 10PX;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  height: px;
+  font-family: "Barlow Condensed", sans-serif;
+}
+.grid-container p {
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.grid-container > div {
+  background-color: #303030;
+  font-size: 30px;
+  padding: 20px;
+  margin: 20px;
+  height: 200px;
+  width: 300px;
+  color: white;
+}
+.grid-container > div .flaticon-wifi, .grid-container > div .flaticon-car, .grid-container > div .flaticon-world,
+.grid-container > div .flaticon-swimming, .grid-container > div .flaticon-bed, .grid-container > div .flaticon-breakfast {
+  color: #8e6731;
+  font-size: 2em;
+  padding: 10px;
+}
+
+H2 {
+  font-size: 40px;
+  padding: 20px;
+  color: white;
 }
 
 .tuile {
@@ -193,4 +293,13 @@ body::-webkit-scrollbar-thumb:hover {
   font-size: 2em;
   writing-mode: vertical-rl;
   transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.btn {
+  display: block;
+  padding: 15px 20px;
+  background-color: rgb(255, 255, 255);
+  width: -moz-fit-content;
+  width: fit-content;
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */

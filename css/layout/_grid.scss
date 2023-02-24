@@ -11,4 +11,133 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     font-family: 'Barlow', sans-serif;
+    color: white;
+
+    p {
+        color: #8e6731;
+        font-size: 15px;
+        padding: 20px;
+
+    }
+
+    a {
+        color: wheat;
+        background-color: #8e6731;
+        padding: 10px;
+
+    }
+
+    h2 {
+        font-size: 30px;
+        padding: 20px;
+    }
+}
+
+.Options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 50px;
+    color: white;
+    gap: 10px;
+    height: 300px;
+    margin: 50px;
+    padding: 50px;
+
+
+    .opt {
+        font-size: 15px;
+        font-family: 'Barlow Condensed', sans-serif;
+        
+
+        H2 {
+            font-size: 50px;
+            padding: 20px;
+        }
+
+
+        .flaticon-call,
+        a {
+            color: #8e6731;
+            font-size: 20px;
+
+        }
+
+    }
+
+    .box1 {
+        background-color: #303030;
+        text-align: center;
+        margin: 20px;
+        padding: 20px;
+        font-size: 15px;
+        font-family: 'Barlow Condensed', sans-serif;
+
+        .ti-check, .ti-close {
+            color: #8e6731;
+            margin: 10px;
+        }
+    }
+
+    .box2 {
+        background-color: #303030;
+        padding: 20px;
+        margin: 20px;
+        font-family: 'Barlow Condensed', sans-serif;
+        text-align: center;
+        
+        .ti-check, .ti-close {
+            color: #8e6731;
+            margin: 10px;
+        }
+
+        
+    }
+
+
+    h3 {
+        font-size: 25PX;
+        padding: 10PX;
+    }
+
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    height: px;
+    font-family: 'Barlow Condensed', sans-serif;
+
+    p {
+        font-size: 15px;
+        margin-top: 20px;
+
+    }
+
+
+}
+
+.grid-container>div {
+    background-color: #303030;
+    font-size: 30px;
+    padding: 20px;
+    margin: 20px;
+    height: 200px;
+    width: 300px;
+    color: white;
+
+    .flaticon-wifi ,.flaticon-car,.flaticon-world,
+    .flaticon-swimming, .flaticon-bed, .flaticon-breakfast{
+        color: #8e6731;
+        font-size: 2em;
+        padding: 10px;
+    }
+
+}
+
+H2 {
+    font-size: 40px;
+    padding: 20px;
+    color: white;
 }
