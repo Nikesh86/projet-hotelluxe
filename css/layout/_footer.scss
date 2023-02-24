@@ -1,0 +1,68 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    height: 250px;
+    padding: 10px;
+    margin: 10px;
+    color: white;
+    font-family: 'Barlow Condensed', sans-serif;
+
+    .propos {
+        width: 30%;
+        padding: 20px;
+        p{
+            margin-top: 20px;
+            font-size: 15px;
+    
+        }
+
+        h3 {
+            font-size: 25px;
+            padding-bottom: 20px;
+        }
+
+    }
+
+    .Contact {
+        width: 30%;
+        padding:10px;
+        margin: 10px;
+
+        p{
+            margin-bottom: 30px;
+        }
+        .address{
+            margin-top: 30PX;
+        }
+    
+        a {
+            color: white;
+        }
+
+        h3 {
+            font-size: 25px;
+            margin-bottom: 30px;
+            
+        }
+
+        .icons {
+            display: flex;
+            gap:5px;
+            margin-top: 20px;
+
+        }
+    }
+}
+.Copyright{
+    display: flex;
+    justify-content:center;
+    gap: 5px;
+    height:10px;
+    padding:60px;
+    background-color: rgb(27, 26, 26);
+    color: rgb(145, 149, 153);
+    margin-top: 20px;
+    a{
+        color: whitesmoke;
+    }
+}

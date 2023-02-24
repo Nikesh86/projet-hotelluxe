@@ -55,6 +55,65 @@ body {
   margin-left: 300px;
 }
 
+.footer {
+  display: flex;
+  justify-content: space-between;
+  height: 250px;
+  padding: 10px;
+  margin: 10px;
+  color: white;
+  font-family: "Barlow Condensed", sans-serif;
+}
+.footer .propos {
+  width: 30%;
+  padding: 20px;
+}
+.footer .propos p {
+  margin-top: 20px;
+  font-size: 15px;
+}
+.footer .propos h3 {
+  font-size: 25px;
+  padding-bottom: 20px;
+}
+.footer .Contact {
+  width: 30%;
+  padding: 10px;
+  margin: 10px;
+}
+.footer .Contact p {
+  margin-bottom: 30px;
+}
+.footer .Contact .address {
+  margin-top: 30PX;
+}
+.footer .Contact a {
+  color: white;
+}
+.footer .Contact h3 {
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+.footer .Contact .icons {
+  display: flex;
+  gap: 5px;
+  margin-top: 20px;
+}
+
+.Copyright {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  height: 10px;
+  padding: 60px;
+  background-color: rgb(27, 26, 26);
+  color: rgb(145, 149, 153);
+  margin-top: 20px;
+}
+.Copyright a {
+  color: whitesmoke;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -172,6 +231,7 @@ body::-webkit-scrollbar-thumb:hover {
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   font-family: "Barlow", sans-serif;
+  margin: 10px;
 }
 
 .spa {
@@ -180,6 +240,13 @@ body::-webkit-scrollbar-thumb:hover {
   grid-template-rows: auto;
   font-family: "Barlow", sans-serif;
   color: white;
+  margin: 10px;
+}
+.spa h2 {
+  font-size: 30px;
+}
+.spa .text {
+  margin: 10px;
 }
 .spa p {
   color: #8e6731;
@@ -191,10 +258,6 @@ body::-webkit-scrollbar-thumb:hover {
   background-color: #8e6731;
   padding: 10px;
 }
-.spa h2 {
-  font-size: 30px;
-  padding: 20px;
-}
 
 .Options {
   display: grid;
@@ -203,8 +266,8 @@ body::-webkit-scrollbar-thumb:hover {
   color: white;
   gap: 10px;
   height: 300px;
-  margin: 50px;
-  padding: 50px;
+  margin: 10px;
+  padding: 10px;
 }
 .Options .opt {
   font-size: 15px;
@@ -225,6 +288,7 @@ body::-webkit-scrollbar-thumb:hover {
   margin: 20px;
   padding: 20px;
   font-size: 15px;
+  width: 300px;
   font-family: "Barlow Condensed", sans-serif;
 }
 .Options .box1 .ti-check, .Options .box1 .ti-close {
@@ -234,9 +298,10 @@ body::-webkit-scrollbar-thumb:hover {
 .Options .box2 {
   background-color: #303030;
   padding: 20px;
-  margin: 20px;
+  margin: 10px;
   font-family: "Barlow Condensed", sans-serif;
   text-align: center;
+  width: 300px;
 }
 .Options .box2 .ti-check, .Options .box2 .ti-close {
   color: #8e6731;
@@ -251,7 +316,7 @@ body::-webkit-scrollbar-thumb:hover {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
-  height: px;
+  margin: 10px;
   font-family: "Barlow Condensed", sans-serif;
 }
 .grid-container p {
@@ -263,7 +328,7 @@ body::-webkit-scrollbar-thumb:hover {
   background-color: #303030;
   font-size: 30px;
   padding: 20px;
-  margin: 20px;
+  margin: 10px;
   height: 200px;
   width: 300px;
   color: white;
@@ -302,4 +367,5 @@ H2 {
   width: -moz-fit-content;
   width: fit-content;
   text-decoration: none;
+  margin-top: 30px;
 }/*# sourceMappingURL=style.css.map */
