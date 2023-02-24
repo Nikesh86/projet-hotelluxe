@@ -280,7 +280,8 @@ body::-webkit-scrollbar-thumb:hover {
 .Options .opt .flaticon-call,
 .Options .opt a {
   color: #8e6731;
-  font-size: 20px;
+  font-size: 25px;
+  margin: 10px;
 }
 .Options .box1 {
   background-color: #303030;
@@ -290,6 +291,10 @@ body::-webkit-scrollbar-thumb:hover {
   font-size: 15px;
   width: 300px;
   font-family: "Barlow Condensed", sans-serif;
+}
+.Options .box1 p {
+  font-size: 3em;
+  color: #8e6731;
 }
 .Options .box1 .ti-check, .Options .box1 .ti-close {
   color: #8e6731;
@@ -302,6 +307,10 @@ body::-webkit-scrollbar-thumb:hover {
   font-family: "Barlow Condensed", sans-serif;
   text-align: center;
   width: 300px;
+}
+.Options .box2 p {
+  font-size: 3em;
+  color: #8e6731;
 }
 .Options .box2 .ti-check, .Options .box2 .ti-close {
   color: #8e6731;

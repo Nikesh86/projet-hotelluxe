@@ -54,6 +54,7 @@
         font-size: 15px;
         font-family: 'Barlow Condensed', sans-serif;
         
+        
 
         H2 {
             font-size: 50px;
@@ -64,7 +65,8 @@
         .flaticon-call,
         a {
             color: #8e6731;
-            font-size: 20px;
+            font-size: 25px;
+            margin: 10px;
 
         }
 
@@ -78,6 +80,10 @@
         font-size: 15px;
         width: 300px;
         font-family: 'Barlow Condensed', sans-serif;
+        p{
+            font-size: 3em;
+            color: #8e6731;
+        }
 
         .ti-check, .ti-close {
             color: #8e6731;
@@ -92,6 +98,12 @@
         font-family: 'Barlow Condensed', sans-serif;
         text-align: center;
         width: 300px;
+
+        p{
+            font-size: 3em;
+            color: #8e6731;
+            
+        }
         
         .ti-check, .ti-close {
             color: #8e6731;
