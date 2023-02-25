@@ -114,6 +114,15 @@ body {
   color: whitesmoke;
 }
 
+.main .chambres {
+  display: flex;
+  justify-content: space-between;
+}
+.main .check {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
 * {
   padding: 0;
   margin: 0;
