@@ -114,6 +114,71 @@ body {
   color: whitesmoke;
 }
 
+.bkground {
+  position: relative;
+  text-align: center;
+}
+.bkground .text-sect h1 {
+  position: relative;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  line-height: 1.35em;
+  letter-spacing: 15px;
+}
+.bkground .text-sect a {
+  width: 200px;
+  border: 1px solid white;
+  padding: 12px;
+  outline: none;
+  margin-top: 30px;
+}
+.bkground h1, .bkground h4, .bkground a {
+  font-weight: 350;
+  line-height: 1.24em;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+}
+
+.content {
+  width: 1200px;
+  height: auto;
+  margin: auto;
+  padding: 75px;
+  position: relative;
+  color: #fff;
+}
+
+.sct-title {
+  font-size: 2em;
+  line-height: 80px;
+}
+
+.content p {
+  padding-bottom: 25px;
+  line-height: 30px;
+}
+
+.hotelname {
+  color: #e4a853;
+}
+
+.star {
+  color: #e4a853;
+  line-height: 4em;
+}
+
+.card1 {
+  position: absolute;
+  left: 70%;
+}
+
+.card2 {
+  position: absolute;
+  left: 700px;
+}
+
 * {
   padding: 0;
   margin: 0;
