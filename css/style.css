@@ -50,6 +50,12 @@ table {
   border-spacing: 0;
 }
 
+img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 body {
   background-color: #282828;
   margin-left: 300px;
@@ -95,17 +101,21 @@ body .nav-bar .nav-bar-menu {
 body .nav-bar .nav-bar-menu .activ {
   color: #8e6731;
 }
+body .nav-bar .nav-bar-menu a {
+  overflow: hidden;
+}
 body .nav-bar .nav-bar-menu span {
   color: gray;
   font-size: 14px;
   padding-left: 35px;
   transition: 0.6s ease;
+  line-height: 20px;
 }
 body .nav-bar .nav-bar-menu span:hover {
   color: #977e5b;
-  transform: scale(0.9) ease;
+  transform: scale(1.5);
   text-shadow: 1px 1px 10px rgba(142, 103, 49, 0.2);
-  font-size: 16px;
+  font-size: 15px;
 }
 body .nav-bar .nav-bar-title h1 {
   font-family: "Gilda Display", serif;
@@ -155,7 +165,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background-color: rgba(0, 0, 0, 0.2509803922);
+  background-color: rgba(198, 187, 187, 0.2509803922);
 }
 
 body::-webkit-scrollbar-thumb {
@@ -169,9 +179,15 @@ body::-webkit-scrollbar-thumb:hover {
 
 .chambres {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 17px;
   font-family: "Barlow", sans-serif;
+}
+.chambres .chambres1, .chambres .chambres2, .chambres .chambres3 {
+  grid-column: span 2;
+}
+.chambres .chambres4, .chambres .chambres5 {
+  grid-column: span 3;
 }
 
 .spa {
@@ -181,16 +197,150 @@ body::-webkit-scrollbar-thumb:hover {
   font-family: "Barlow", sans-serif;
 }
 
-.tuile {
+.container1 {
+  padding: 70px;
+}
+.container1 .chambre-title p {
+  font-family: "Barlow Condensed", sans-serif;
+  color: #a27638;
+  margin-bottom: 14px;
+  letter-spacing: 0.3em;
+  font-size: 12px;
+}
+.container1 .chambre-title h2 {
+  font-family: "Gilda Display", serif;
+  font-size: 40px;
+  color: white;
+  margin-bottom: 20px;
+}
+.container1 .tuile {
   position: relative;
 }
-.tuile figcaption {
+.container1 .tuile figcaption {
   position: absolute;
   inset: 0;
   color: #f6f6f6;
   display: flex;
-  align-items: top;
+  align-items: flex-start;
   font-size: 2em;
   writing-mode: vertical-rl;
-  transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+  justify-content: space-between;
+}
+.container1 .tuile figcaption a .reserver {
+  position: absolute;
+  display: block;
+  transform: rotate(180deg);
+  transform-origin: center;
+  color: white;
+  font-size: 14px;
+  font-family: "Barlow Condensed", sans-serif;
+  border: 1px solid rgba(197, 197, 197, 0.712);
+}
+.container1 .tuile figcaption a .reserver.haut {
+  padding: 1.9% 1.55%;
+  top: 4.7%;
+  right: 6.7%;
+  letter-spacing: 0.25em;
+}
+.container1 .tuile figcaption a .reserver.bas {
+  padding: 1.9% 1.55%;
+  top: 4.7%;
+  right: 4.3%;
+  letter-spacing: 0.25em;
+}
+.container1 .tuile figcaption .saw {
+  position: absolute;
+  justify-content: space-between;
+  width: 100%;
+  writing-mode: horizontal-tb;
+}
+.container1 .tuile figcaption .saw.top {
+  bottom: 10.3%;
+  left: 6.1%;
+}
+.container1 .tuile figcaption .saw.bottom {
+  bottom: 14%;
+  left: 3.99%;
+}
+.container1 .tuile figcaption .saw p {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.2em;
+  margin-bottom: 20px;
+}
+.container1 .tuile figcaption h3 {
+  font-family: "Gilda Display", serif;
+  font-size: 0.84em;
+  position: relative;
+}
+.container1 .tuile figcaption h3::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 60px;
+  background-color: aliceblue;
+  left: 0;
+  bottom: -8;
+}
+.container1 .tuile figcaption .hidden-hover {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  justify-content: space-between;
+  top: px;
+}
+.container1 .tuile figcaption .hidden-hover .flaticon {
+  display: block;
+  font-size: 0.5em;
+  letter-spacing: 1em;
+}
+.container1 .tuile figcaption .hidden-hover .hidden-hover-left {
+  letter-spacing: 13px;
+  color: rgb(255, 255, 255);
+  writing-mode: horizontal-tb;
+  font-size: 14px;
+}
+.container1 .tuile figcaption .hidden-hover .hidden-hover-right {
+  writing-mode: horizontal-tb;
+}
+.container1 .tuile figcaption .hidden-hover .hidden-hover-right .btn {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 0.25em;
+  display: flex;
+  align-items: center;
+}
+.container1 .tuile figcaption .hidden-hover .hidden-hover-right .btn .arrow {
+  background-color: rgb(255, 255, 255);
+  height: 0.09em;
+  width: 0.4em;
+  margin-left: 0.4em;
+  position: relative;
+}
+.container1 .tuile figcaption .hidden-hover .hidden-hover-right .btn .arrow::after {
+  position: absolute;
+  content: "";
+  background-color: rgb(252, 255, 245);
+  height: 0.07em;
+  width: 4px;
+  right: 0;
+  top: 0em;
+  transform: rotate(-45deg);
+  transform-origin: right top;
+}
+.container1 .tuile figcaption .hidden-hover .hidden-hover-right .btn .arrow::before {
+  position: absolute;
+  content: "";
+  background-color: rgb(255, 255, 255);
+  height: 0.07em;
+  width: 4px;
+  right: 0;
+  top: 0.03em;
+  transform: rotate(45deg);
+  transform-origin: right bottom;
+  border: 0.4em;
 }/*# sourceMappingURL=style.css.map */

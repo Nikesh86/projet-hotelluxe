@@ -1,8 +1,14 @@
 .chambres {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 17px;
     font-family: 'Barlow', sans-serif;
+        .chambres1, .chambres2, .chambres3{
+            grid-column: span 2;
+        }
+        .chambres4, .chambres5{
+            grid-column: span 3;
+        }
 }
 
 
