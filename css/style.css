@@ -276,11 +276,11 @@ body::-webkit-scrollbar-thumb:hover {
 .container1 .tuile figcaption h3::after {
   content: "";
   position: absolute;
-  height: 1px;
+  height: 0.01em;
   width: 60px;
   background-color: aliceblue;
   left: 0;
-  bottom: -8;
+  bottom: -12px;
 }
 .container1 .tuile figcaption .hidden-hover {
   height: 100%;

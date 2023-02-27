@@ -107,11 +107,11 @@
                         &::after{
                             content: "";
                             position: absolute;
-                            height: 1px;
+                            height: 0.01em;
                             width: 60px;
                             background-color: aliceblue;
                             left: 0;
-                            bottom: ;
+                            bottom: -12px;
                             
                         }
                     
