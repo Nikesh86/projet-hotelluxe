@@ -235,14 +235,6 @@ body::-webkit-scrollbar-thumb:hover {
   background-color: rgb(253, 202, 0);
 }
 
-.chambres {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  font-family: "Barlow", sans-serif;
-  margin: 10px;
-}
-
 .spa {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -386,4 +378,76 @@ H2 {
   width: fit-content;
   text-decoration: none;
   margin-top: 30px;
+}
+
+body {
+  margin-left: 300px;
+  color: white;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+}
+.container .centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container .bar-star {
+  color: #8e6731;
+  font-size: 2em;
+}
+.container h1 {
+  font-size: 4em;
+  margin-top: 50px;
+}
+.container p {
+  font-size: 2em;
+  margin-top: 50px;
+}
+
+.chambre {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10%;
+}
+.chambre .ducsman {
+  color: #8e6731;
+}
+
+.box1 {
+  align-items: center;
+}
+.box1 P {
+  padding: 15px;
+}
+
+.box2 {
+  align-items: center;
+}
+.box2 .flaticon-group, .box2 .flaticon-wifi, .box2 .flaticon-breakfast, .box2 .flaticon-towel, .box2 .flaticon-swimming {
+  color: #8e6731;
+  padding: 10px;
+}
+.box2 p {
+  padding: 5px;
+  margin: 5px;
+}
+.box2 h2 {
+  font-size: 2em;
+  padding: 10px;
+  margin: 10px;
+}
+
+.checkin {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 5%;
+  padding: 10px;
+}
+.checkin h3 {
+  font-size: 20px;
+  margin-bottom: 25px;
 }/*# sourceMappingURL=style.css.map */
