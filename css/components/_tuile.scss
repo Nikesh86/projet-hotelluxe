@@ -1,16 +1,210 @@
-.tuile {
-    position: relative;
+.container1 {
+
+    padding: 70px;
 
 
-    figcaption {
-        position: absolute;
-        inset: 0;
-        color: $texte-clare;
-        display: flex;
-        align-items: top;
-        font-size: 2em;
-        writing-mode: vertical-rl;
-        transition: all 1s cubic-bezier(0.215, 0.610, 0.355, 1);
+    .chambre-title {
+        p {
+            font-family: 'Barlow Condensed', sans-serif;
+            color: #a27638;
+            margin-bottom: 14px;
+            letter-spacing: 0.30em;
+            font-size: 12px;
+        }
 
+        h2 {
+            font-family: 'Gilda Display', serif;
+            font-size: 40px;
+            color: white;
+            margin-bottom: 20px;
+        }
     }
-}
+
+
+
+
+
+    .tuile {
+        position: relative;
+
+
+
+
+        figcaption {
+            position: absolute;
+            //overflow: hidden;
+            inset: 0;
+            color: $texte-clare;
+            display: flex;
+            align-items: flex-start;
+            font-size: 2em;
+            writing-mode: vertical-rl;
+            justify-content: space-between;
+
+            
+
+
+                a .reserver {
+                    position: absolute;
+                    display: block;
+                    transform: rotate(180deg);
+                    transform-origin: center;
+                    color: white;
+                    font-size: 14px;
+                    font-family: 'Barlow Condensed', sans-serif;
+                    border: 1px solid rgba(197, 197, 197, 0.712);
+
+                    &.haut {
+                        
+                        padding: 1.9% 1.55%;
+                        top: 4.7%;
+                        right: 6.7%;
+                        letter-spacing: 0.25em;
+                    }
+
+                    &.bas {
+                        padding: 1.9% 1.55%;
+                        top: 4.7%;
+                        right: 4.3%;
+                        letter-spacing: 0.25em;
+
+                    }
+
+                }
+
+                .saw {
+                    position: absolute;
+                    justify-content: space-between;
+                    width: 100%;
+                    writing-mode: horizontal-tb;
+
+
+
+                    &.top {
+                        bottom: 10.3%;
+                        left: 6.1%;
+                    }
+
+                    &.bottom {
+                        bottom: 14%;
+                        left: 3.99%;
+                    }
+
+
+
+                    p {
+                        font-family: 'Barlow Condensed', sans-serif;
+                        font-size: 15px;
+                        letter-spacing: 0.20em;
+                        margin-bottom: 20px;
+                    }
+                }
+
+                    h3 {
+                        font-family: 'Gilda Display', serif;
+                        font-size: 0.840em;
+                        position: relative;    
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            height: 0.01em;
+                            width: 60px;
+                            background-color: aliceblue;
+                            left: 0;
+                            bottom: -12px;
+                            
+                        }
+                    
+                    }
+
+                .hidden-hover{
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    position: absolute;
+                    justify-content: space-between;
+                    top: px;
+
+                    
+
+                    .flaticon{
+                        display: block;
+                        font-size: 0.5em;
+                        letter-spacing:1em;
+                        
+                        
+                    }
+                    .hidden-hover-left{
+                        letter-spacing: 13px;
+                        color: rgb(255, 255, 255);
+                        writing-mode: horizontal-tb;
+                        font-size: 14px;
+
+                    }
+                    
+                    
+                    .hidden-hover-right{
+                        writing-mode: horizontal-tb;
+                        
+                        .btn {
+                            color: rgb(255, 255, 255);
+                            font-size: 14px;
+                            font-family: 'Barlow Condensed', sans-serif;
+                            letter-spacing: 0.25em;
+                            display: flex;
+                            align-items: center;
+
+
+                            
+                            
+                            
+                            .arrow{
+                                background-color: rgb(255, 255, 255);
+                                height: 0.09em;
+                                width: 0.4em;
+                                margin-left: 0.4em;
+                                position: relative;
+                                
+                                
+                                
+                                &::after{
+                                    position: absolute;
+                                    content: '';
+                                    background-color: rgb(252, 255, 245);
+                                    height: 0.07em;
+                                    width: 4px;
+                                    right: 0;
+                                    top: 0em;
+                                    transform: rotate(-45deg);
+                                    transform-origin: right top;
+                                    
+                                }
+                                &::before{
+                                    position: absolute;
+                                    content: '';
+                                    background-color: rgb(255, 255, 255);
+                                    height: 0.07em;
+                                    width: 4px;
+                                    right: 0;
+                                    top: 0.03em;
+                                    transform: rotate(45deg);
+                                    transform-origin: right bottom;
+                                    border: 0.4em;
+                                    
+                                    
+                                }
+                            }
+                            
+                        }
+                        
+                    }
+                    
+
+                }
+            }
+
+        }
+    }
+
