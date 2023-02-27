@@ -3,7 +3,9 @@
     grid-template-columns: repeat(6, 1fr);
     gap: 17px;
     font-family: 'Barlow', sans-serif;
-        .chambres1, .chambres2, .chambres3{
+       
+    
+    .chambres1, .chambres2, .chambres3{
             grid-column: span 2;
         }
         .chambres4, .chambres5{
@@ -17,4 +19,153 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     font-family: 'Barlow', sans-serif;
+    color: rgb(255, 255, 255);
+    margin: 10px;
+    h2 {
+        font-size: 30px;
+    }
+    .text{
+        margin: 10px;
+        
+    }
+
+    p {
+        color: #8e6731;
+        font-size: 15px;
+        padding: 20px;
+
+    }
+
+    a {
+        color: wheat;
+        background-color: #8e6731;
+        padding: 10px;
+
+    }
+
+    
+}
+
+.Options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 50px;
+    color: white;
+    gap: 10px;
+    height: 300px;
+    margin: 10px;
+    padding: 10px;
+
+
+    .opt {
+        font-size: 15px;
+        font-family: 'Barlow Condensed', sans-serif;
+        
+        
+
+        H2 {
+            font-size: 50px;
+            padding: 20px;
+        }
+
+
+        .flaticon-call,
+        a {
+            color: #8e6731;
+            font-size: 25px;
+            margin: 10px;
+
+        }
+
+    }
+
+    .box1 {
+        background-color: #303030;
+        text-align: center;
+        margin: 20px;
+        padding: 20px;
+        font-size: 15px;
+        width: 300px;
+        font-family: 'Barlow Condensed', sans-serif;
+        p{
+            font-size: 3em;
+            color: #8e6731;
+        }
+
+        .ti-check, .ti-close {
+            color: #8e6731;
+            margin: 10px;
+        }
+    }
+
+    .box2 {
+        background-color: #303030;
+        padding: 20px;
+        margin: 10px;
+        font-family: 'Barlow Condensed', sans-serif;
+        text-align: center;
+        width: 300px;
+
+        p{
+            font-size: 3em;
+            color: #8e6731;
+            
+        }
+        
+        .ti-check, .ti-close {
+            color: #8e6731;
+            margin: 10px;
+        }
+
+        
+    }
+
+
+    h3 {
+        font-size: 25PX;
+        padding: 10PX;
+    }
+
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin: 10px;
+    font-family: 'Barlow Condensed', sans-serif;
+
+
+    p {
+        font-size: 15px;
+        margin-top: 20px;
+
+    }
+
+
+}
+
+.grid-container>div {
+    background-color: #303030;
+    font-size: 30px;
+    padding: 20px;
+    margin: 10px;
+    height: 200px;
+    width: 300px;
+    color: white;
+
+    .flaticon-wifi ,.flaticon-car,.flaticon-world,
+    .flaticon-swimming, .flaticon-bed, .flaticon-breakfast{
+        color: #8e6731;
+        font-size: 2em;
+        padding: 10px;
+    }
+
+}
+
+H2 {
+    font-size: 40px;
+    padding: 20px;
+    color: white;
 }

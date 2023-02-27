@@ -61,6 +61,74 @@ body {
   margin-left: 300px;
 }
 
+.footer {
+  display: flex;
+  justify-content: space-between;
+  height: 250px;
+  padding: 10px;
+  margin: 10px;
+  color: white;
+  font-family: "Barlow Condensed", sans-serif;
+}
+.footer .propos {
+  width: 30%;
+  padding: 20px;
+}
+.footer .propos p {
+  margin-top: 20px;
+  font-size: 15px;
+}
+.footer .propos h3 {
+  font-size: 25px;
+  padding-bottom: 20px;
+}
+.footer .Contact {
+  width: 30%;
+  padding: 10px;
+  margin: 10px;
+}
+.footer .Contact p {
+  margin-bottom: 30px;
+}
+.footer .Contact .address {
+  margin-top: 30PX;
+}
+.footer .Contact a {
+  color: white;
+}
+.footer .Contact h3 {
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+.footer .Contact .icons {
+  display: flex;
+  gap: 5px;
+  margin-top: 20px;
+}
+
+.Copyright {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  height: 10px;
+  padding: 60px;
+  background-color: rgb(27, 26, 26);
+  color: rgb(145, 149, 153);
+  margin-top: 20px;
+}
+.Copyright a {
+  color: whitesmoke;
+}
+
+.main .chambres {
+  display: flex;
+  justify-content: space-between;
+}
+.main .check {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -182,6 +250,7 @@ body::-webkit-scrollbar-thumb:hover {
   grid-template-columns: repeat(6, 1fr);
   gap: 17px;
   font-family: "Barlow", sans-serif;
+  margin: 10px;
 }
 .chambres .chambres1, .chambres .chambres2, .chambres .chambres3 {
   grid-column: span 2;
@@ -308,6 +377,16 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .container1 .tuile figcaption .hidden-hover .hidden-hover-right .btn {
   color: rgb(255, 255, 255);
+}
+
+.btn {
+  display: block;
+  padding: 15px 20px;
+  background-color: rgb(255, 255, 255);
+  width: -moz-fit-content;
+  width: fit-content;
+  text-decoration: none;
+  margin-top: 30px;
   font-size: 14px;
   font-family: "Barlow Condensed", sans-serif;
   letter-spacing: 0.25em;
