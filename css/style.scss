@@ -16,14 +16,9 @@
 
 // // import layout//
 @import './layout/body';
- @import './layout/article';
 @import './layout/article';
 @import './layout/footer';
-<<<<<<< HEAD
- @import './layout/header';
-=======
 @import './layout/header';
->>>>>>> 37a3ec87996dde15de7eb7befb7588f436d34213
 @import './layout/section';
 
 
@@ -35,20 +30,10 @@
  // import components //
  @import './components/tuile';
  @import './components/button';
-<<<<<<< HEAD
-
-// // import pages //
-
- @import './pages/chambres';
-
-// @import './pages/product';
-=======
 
  // import page //
 @import './pages/chambres';
-@import './pages/contact';
 
->>>>>>> 077e1e8bfe12d56e7565f058cd2c0a7cce955f49
 
 
 
