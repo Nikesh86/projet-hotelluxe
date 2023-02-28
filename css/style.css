@@ -50,12 +50,6 @@ table {
   border-spacing: 0;
 }
 
-img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 body {
   background-color: #282828;
   margin-left: 300px;
@@ -589,9 +583,34 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin-top: 5%;
+  margin-bottom: 5%;
   padding: 10px;
 }
 .checkin h3 {
   font-size: 20px;
   margin-bottom: 25px;
+}
+.checkin .ti-check {
+  color: #8e6731;
+}
+
+.Instructions, .Animaux, .Enfants {
+  margin-top: 10px;
+  margin: 10px;
+}
+.Instructions h3, .Animaux h3, .Enfants h3 {
+  font-size: 25px;
+  padding: 10px;
+}
+.Instructions p, .Animaux p, .Enfants p {
+  padding: 10px;
+  font-size: 15px;
+}
+
+a {
+  margin: 10px;
+}
+
+.footer {
+  margin-top: 10%;
 }/*# sourceMappingURL=style.css.map */

@@ -16,9 +16,12 @@
 
 // // import layout//
 @import './layout/body';
-// @import './layout/article';
+@import './layout/article';
 @import './layout/footer';
 @import './layout/header';
+@import './layout/section';
+
+
 // @import './layout/sidebar';
  @import './layout/navbar';
  @import './layout/article';
@@ -30,6 +33,7 @@
 
  // import page //
 @import './pages/chambres';
+@import './pages/contact';
 
 
 
