@@ -50,6 +50,12 @@ table {
   border-spacing: 0;
 }
 
+img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 body {
   background-color: #282828;
   margin-left: 300px;
@@ -114,6 +120,84 @@ body {
   color: whitesmoke;
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+.bkground {
+  position: relative;
+  text-align: center;
+}
+.bkground .text-sect h1 {
+  position: relative;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  line-height: 1.35em;
+  letter-spacing: 15px;
+}
+.bkground .text-sect a {
+  width: 200px;
+  border: 1px solid white;
+  padding: 12px;
+  outline: none;
+  margin-top: 30px;
+}
+.bkground h1, .bkground h4, .bkground a {
+  font-weight: 350;
+  line-height: 1.24em;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+}
+
+.content {
+  width: 1200px;
+  height: auto;
+  margin: auto;
+  padding: 75px;
+  position: relative;
+  color: #fff;
+}
+
+.sct-title {
+  font-size: 2em;
+  line-height: 80px;
+}
+
+.content p {
+  padding-bottom: 25px;
+  line-height: 30px;
+}
+
+.hotelname {
+  color: #e4a853;
+}
+
+.star {
+  color: #e4a853;
+  line-height: 4em;
+}
+
+.card1 {
+  position: absolute;
+  left: 70%;
+}
+
+.card2 {
+  position: absolute;
+  left: 700px;
+=======
+.main .chambres {
+  display: flex;
+  justify-content: space-between;
+}
+.main .check {
+  display: grid;
+  grid-template-columns: auto auto;
+>>>>>>> 37a3ec87996dde15de7eb7befb7588f436d34213
+}
+
+>>>>>>> 077e1e8bfe12d56e7565f058cd2c0a7cce955f49
 * {
   padding: 0;
   margin: 0;
@@ -154,17 +238,21 @@ body .nav-bar .nav-bar-menu {
 body .nav-bar .nav-bar-menu .activ {
   color: #8e6731;
 }
+body .nav-bar .nav-bar-menu a {
+  overflow: hidden;
+}
 body .nav-bar .nav-bar-menu span {
   color: gray;
   font-size: 14px;
   padding-left: 35px;
   transition: 0.6s ease;
+  line-height: 20px;
 }
 body .nav-bar .nav-bar-menu span:hover {
   color: #977e5b;
-  transform: scale(0.9) ease;
+  transform: scale(1.5);
   text-shadow: 1px 1px 10px rgba(142, 103, 49, 0.2);
-  font-size: 16px;
+  font-size: 15px;
 }
 body .nav-bar .nav-bar-title h1 {
   font-family: "Gilda Display", serif;
@@ -214,7 +302,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background-color: rgba(0, 0, 0, 0.2509803922);
+  background-color: rgba(198, 187, 187, 0.2509803922);
 }
 
 body::-webkit-scrollbar-thumb {
@@ -226,20 +314,12 @@ body::-webkit-scrollbar-thumb:hover {
   background-color: rgb(253, 202, 0);
 }
 
-.chambres {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  font-family: "Barlow", sans-serif;
-  margin: 10px;
-}
-
 .spa {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
   font-family: "Barlow", sans-serif;
-  color: white;
+  color: rgb(255, 255, 255);
   margin: 10px;
 }
 .spa h2 {
@@ -355,18 +435,152 @@ H2 {
   color: white;
 }
 
-.tuile {
+.container1 {
+  padding: 70px;
+}
+.container1 .chambre-title p {
+  font-family: "Barlow Condensed", sans-serif;
+  color: #a27638;
+  margin-bottom: 14px;
+  letter-spacing: 0.3em;
+  font-size: 12px;
+}
+.container1 .chambre-title h2 {
+  font-family: "Gilda Display", serif;
+  font-size: 40px;
+  color: white;
+  margin-bottom: 20px;
+}
+.container1 .tuile {
   position: relative;
 }
-.tuile figcaption {
+.container1 .tuile figcaption {
   position: absolute;
   inset: 0;
   color: #f6f6f6;
   display: flex;
-  align-items: top;
+  align-items: flex-start;
   font-size: 2em;
   writing-mode: vertical-rl;
-  transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+  justify-content: space-between;
+}
+.container1 .tuile figcaption a .reserver {
+  position: absolute;
+  display: block;
+  transform: rotate(180deg);
+  transform-origin: center;
+  color: white;
+  font-size: 14px;
+  font-family: "Barlow Condensed", sans-serif;
+  border: 1px solid rgba(197, 197, 197, 0.712);
+}
+.container1 .tuile figcaption a .reserver.haut {
+  padding: 1.9% 1.55%;
+  top: 4.7%;
+  right: 6.7%;
+  letter-spacing: 0.25em;
+}
+.container1 .tuile figcaption a .reserver.bas {
+  padding: 1.9% 1.55%;
+  top: 4.7%;
+  right: 4.3%;
+  letter-spacing: 0.25em;
+}
+.container1 .tuile figcaption .saw {
+  position: absolute;
+  justify-content: space-between;
+  width: 100%;
+  writing-mode: horizontal-tb;
+}
+.container1 .tuile figcaption .saw.top {
+  bottom: 10.3%;
+  left: 6.1%;
+}
+.container1 .tuile figcaption .saw.bottom {
+  bottom: 14%;
+  left: 3.99%;
+}
+.container1 .tuile figcaption .saw p {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.2em;
+  margin-bottom: 20px;
+}
+.container1 .tuile figcaption h3 {
+  font-family: "Gilda Display", serif;
+  font-size: 0.84em;
+  position: relative;
+}
+.container1 .tuile figcaption h3::after {
+  content: "";
+  position: absolute;
+  height: 0.01em;
+  width: 60px;
+  background-color: aliceblue;
+  left: 0;
+  bottom: -12px;
+}
+.container1 .tuile figcaption .hidden-hover {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  justify-content: space-between;
+  top: px;
+}
+.container1 .tuile figcaption .hidden-hover .flaticon {
+  display: block;
+  font-size: 0.5em;
+  letter-spacing: 1em;
+}
+.container1 .tuile figcaption .hidden-hover .hidden-hover-left {
+  letter-spacing: 13px;
+  color: rgb(255, 255, 255);
+  writing-mode: horizontal-tb;
+  font-size: 14px;
+}
+.container1 .tuile figcaption .hidden-hover .hidden-hover-right {
+  writing-mode: horizontal-tb;
+}
+.container1 .tuile figcaption .hidden-hover .hidden-hover-right .btn {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 0.25em;
+  display: flex;
+  align-items: center;
+}
+.container1 .tuile figcaption .hidden-hover .hidden-hover-right .btn .arrow {
+  background-color: rgb(255, 255, 255);
+  height: 0.09em;
+  width: 0.4em;
+  margin-left: 0.4em;
+  position: relative;
+}
+.container1 .tuile figcaption .hidden-hover .hidden-hover-right .btn .arrow::after {
+  position: absolute;
+  content: "";
+  background-color: rgb(252, 255, 245);
+  height: 0.07em;
+  width: 4px;
+  right: 0;
+  top: 0em;
+  transform: rotate(-45deg);
+  transform-origin: right top;
+}
+.container1 .tuile figcaption .hidden-hover .hidden-hover-right .btn .arrow::before {
+  position: absolute;
+  content: "";
+  background-color: rgb(255, 255, 255);
+  height: 0.07em;
+  width: 4px;
+  right: 0;
+  top: 0.03em;
+  transform: rotate(45deg);
+  transform-origin: right bottom;
+  border: 0.4em;
 }
 
 .btn {
@@ -377,6 +591,7 @@ H2 {
   width: fit-content;
   text-decoration: none;
   margin-top: 30px;
+<<<<<<< HEAD
 }
 
 * {
@@ -489,4 +704,81 @@ body::-webkit-scrollbar-thumb {
 
 body::-webkit-scrollbar-thumb:hover {
   background-color: rgb(253, 202, 0);
+=======
+<<<<<<< HEAD
+=======
+}
+
+body {
+  margin-left: 300px;
+  color: white;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+}
+.container .centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container .bar-star {
+  color: #8e6731;
+  font-size: 2em;
+}
+.container h1 {
+  font-size: 4em;
+  margin-top: 50px;
+}
+.container p {
+  font-size: 2em;
+  margin-top: 50px;
+}
+
+.chambre {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10%;
+}
+.chambre .ducsman {
+  color: #8e6731;
+}
+
+.box1 {
+  align-items: center;
+}
+.box1 P {
+  padding: 15px;
+}
+
+.box2 {
+  align-items: center;
+}
+.box2 .flaticon-group, .box2 .flaticon-wifi, .box2 .flaticon-breakfast, .box2 .flaticon-towel, .box2 .flaticon-swimming {
+  color: #8e6731;
+  padding: 10px;
+}
+.box2 p {
+  padding: 5px;
+  margin: 5px;
+}
+.box2 h2 {
+  font-size: 2em;
+  padding: 10px;
+  margin: 10px;
+}
+
+.checkin {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 5%;
+  padding: 10px;
+}
+.checkin h3 {
+  font-size: 20px;
+  margin-bottom: 25px;
+>>>>>>> 37a3ec87996dde15de7eb7befb7588f436d34213
+>>>>>>> 077e1e8bfe12d56e7565f058cd2c0a7cce955f49
 }/*# sourceMappingURL=style.css.map */
