@@ -1,6 +1,7 @@
 .footer {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20%;
     height: 250px;
     padding: 10px;
     margin: 10px;
@@ -8,7 +9,7 @@
     font-family: 'Barlow Condensed', sans-serif;
 
     .propos {
-        width: 30%;
+        width: 100%;
         padding: 20px;
         p{
             margin-top: 20px;
@@ -24,7 +25,7 @@
     }
 
     .Contact {
-        width: 30%;
+        width: 100%;
         padding:10px;
         margin: 10px;
 

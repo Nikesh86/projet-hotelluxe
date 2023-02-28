@@ -56,8 +56,9 @@ body {
 }
 
 .footer {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20%;
   height: 250px;
   padding: 10px;
   margin: 10px;
@@ -65,7 +66,7 @@ body {
   font-family: "Barlow Condensed", sans-serif;
 }
 .footer .propos {
-  width: 30%;
+  width: 100%;
   padding: 20px;
 }
 .footer .propos p {
@@ -77,7 +78,7 @@ body {
   padding-bottom: 20px;
 }
 .footer .Contact {
-  width: 30%;
+  width: 100%;
   padding: 10px;
   margin: 10px;
 }
@@ -239,6 +240,11 @@ body::-webkit-scrollbar-thumb:hover {
   background-color: rgb(253, 202, 0);
 }
 
+@media screen and (max-width: 391px) {
+  nav {
+    display: none;
+  }
+}
 .spa {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -516,6 +522,7 @@ H2 {
   width: fit-content;
   text-decoration: none;
   margin-top: 30px;
+  text-align: center;
 }
 
 body {
@@ -533,15 +540,18 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.container .bar-star {
+
+.bar-star {
   color: #8e6731;
   font-size: 2em;
 }
-.container h1 {
+
+h1 {
   font-size: 4em;
   margin-top: 50px;
 }
-.container p {
+
+p {
   font-size: 2em;
   margin-top: 50px;
 }
@@ -613,4 +623,38 @@ a {
 
 .footer {
   margin-top: 10%;
+}
+
+@media screen and (max-width: 391px) {
+  header {
+    min-height: 50vh;
+    width: 100%;
+  }
+}
+.info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.info .box1 {
+  margin: 10px;
+  margin-bottom: 30px;
+}
+.info .box1 .flaticon-call,
+.info .box1 .num-tel,
+.info .box1 .ti-email,
+.info .box1 .flaticon-location-pin {
+  color: #8e6731;
+  font-size: 25px;
+  padding: 10px;
+}
+.info .box1 p {
+  font-size: 25px;
+}
+.info .box2 {
+  text-align: center;
+}
+
+.map {
+  margin: 10px;
+  padding: 10px;
 }/*# sourceMappingURL=style.css.map */
