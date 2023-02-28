@@ -1,13 +1,105 @@
-.main{
-    
-    .chambres{display: flex;
-        justify-content: space-between;
+<<<<<<< HEAD
+=======
+.bkground{
+    position: relative;
+    text-align: center;
 
+    .text-sect h1 {
+        position: relative;
+        margin-bottom: 20px;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        line-height: 1.35em;
+        letter-spacing: 15px;
+        
     }
-.check{
-    display: grid;
-    grid-template-columns: auto auto;
+
+    .text-sect a {
+        width: 200px;
+        border: 1px solid #ffff;
+        padding: 12px;
+        outline: none;
+        margin-top: 30px;
+    }
+
+    h1, h4, a {
+        font-weight: 350;
+        line-height: 1.24em;
+        text-transform: uppercase;
+        color: #ffff;
+        text-decoration: none;
+    
+    }
+
+    // .text-sect {
+    //     width: 600px;
+    //     height: 300px;
+    //     margin: 20% 30%;
+    // }
+    
+
 }
 }
 
 
+
+
+
+
+
+
+
+
+
+.content {
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    padding: 75px; 
+    position: relative;
+    color: #fff;
+
+  }
+
+  .sct-title {
+    font-size: 2em;
+    line-height: 80px;
+  }
+
+  .content p{
+    padding-bottom: 25px;
+    line-height: 30px;
+
+  }
+
+  .hotelname {
+    color: #e4a853 ;
+  }
+
+  .star{
+    color: #e4a853 ;
+    line-height: 4em;
+  }
+
+//   .img-card {
+//     display: inline-block;
+//     padding: 15px 25px;
+//     box-sizing: border-box;
+//     cursor: pointer;
+//     background-position: center;
+//     background-size: cover;
+//   }
+
+  .card1{
+    position: absolute;
+    left: 70%;
+  }
+
+  .card2{
+    position: absolute;
+    left: 700px;
+  }
+
+  
+
+>>>>>>> 077e1e8bfe12d56e7565f058cd2c0a7cce955f49

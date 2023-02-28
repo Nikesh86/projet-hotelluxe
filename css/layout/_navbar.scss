@@ -42,25 +42,19 @@ body {
             .activ {
                 color: #8e6731;
             }
-            a{
-                overflow: hidden;
-            }
 
             span {
                 color: gray;
                 font-size: 14px;
                 padding-left: 35px;
                 transition: 0.6s ease;
-                line-height: 20px;
-                
             }
 
             span:hover {
                 color: #977e5b;
-                transform: scale(1.5);
+                transform: scale(0.9) ease;
                 text-shadow: 1px 1px 10px rgba(142, 103, 49, 0.2);
-                font-size: 15px;
-                
+                font-size: 16px;
 
             }
         }
@@ -139,7 +133,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-    background-color: #c6bbbb40;
+    background-color: #00000040;
 }
 
 body::-webkit-scrollbar-thumb {

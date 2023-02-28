@@ -1,7 +1,27 @@
-body {
-    margin-left: 300px;
-    color: white;
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Barlow', sans-serif;
 }
+
+body {
+    height: 500vh;
+
+
+    .nav-bar {
+        background-color: #212121;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 300px;
+        height: 100%;
+        z-index: 3000;
+        color: aliceblue;
+        padding-top: 60px;
+        overflow-x: hidden;
+
 
 .container{
     position: relative;
@@ -16,15 +36,24 @@ body {
  }
 
 
-    .bar-star {
-        color: #8e6731;
-        font-size: 2em;
-    }
+        .nav-bar-menu {
 
-    h1 {
-        font-size: 4em;
-        margin-top: 50px;
-    }
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-bottom: 70px;
+            font-family: 'Barlow', sans-serif;
+
+            .activ {
+                color: #8e6731;
+            }
+
+            span {
+                color: gray;
+                font-size: 14px;
+                padding-left: 35px;
+                transition: 0.6s ease;
+            }
 
     p {
         font-size: 2em;
@@ -32,32 +61,66 @@ body {
     }
 
 
+        .nav-bar-title {
+
+            h1 {
+                font-family: 'Gilda Display', serif;
+                font-size: 27px;
+                color: #8e6731;
+                letter-spacing: 0.15em;
+                font-weight: 100;
+            }
+
+            h2 {
+                font-size: 11px;
+                letter-spacing: 0.60em;
+                margin-top: 4px;
+                font-family: 'Barlow Condensed', sans-serif;
+                color: rgb(255, 255, 255);
+
+            }
 
 
-.chambre{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-   gap: 10%;
+            a {
 
-    .ducsman {
-        color: #8e6731;
-    }
-}
+                .nav-bar-star {
+                    display: block;
+                    color: #8e6731;
+                    margin-bottom: 10px;
+                    font-size: 9px;
+                    letter-spacing: 0.25em;
+                }
+            }
 
-.box1 {
-    align-items: center;
-    P {
-        padding: 15px;
-    }
-    
-}
-.box2{
-align-items: center;
-.flaticon-group,.flaticon-wifi,.flaticon-breakfast,.flaticon-towel,.flaticon-swimming{
-    color: #8e6731;
-    padding: 10px;
-}
+        }
 
+        .nav-bar-reservation {
+            display: flex;
+            gap: 10px;
+            padding-left: 35px;
+            font-family: 'Barlow', sans-serif;
+
+            .nav-bar-number {
+                #information-reservation {
+                    font-size: 15px;
+                    margin-bottom: 5px;
+                    color: gray;
+                }
+
+                #num-tel {
+                    color: #8e6731;
+                    font-size: 24px;
+                    font-family: 'Barlow Condensed', sans-serif;
+                }
+            }
+
+
+            .nav-bar-phone {
+                color: #8e6731;
+                font-size: 34px;
+                padding-top: 10px;
+            }
+        }
    p{
     padding: 5px;
     margin: 5px;
