@@ -120,13 +120,69 @@ body {
   color: whitesmoke;
 }
 
-.main .chambres {
+body .main .chambres {
   display: flex;
   justify-content: space-between;
 }
-.main .check {
+body .main .check {
   display: grid;
   grid-template-columns: auto auto;
+}
+body .img-back {
+  background-image: url("../images/slider/2.jpg");
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: contain;
+  width: 100%;
+  height: 89vh;
+}
+body .content {
+  background-color: #222222;
+}
+body .content .star {
+  display: flex;
+  padding: 70px;
+  gap: 20px;
+}
+body .content .star img {
+  width: 200px;
+  height: 230px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body .content .star .img-star-left {
+  margin-top: 80px;
+}
+body .content .star .star-left {
+  color: white;
+}
+body .content .star .star-left .star-left-bottom {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 100;
+  color: gray;
+  margin-top: 30px;
+  font-size: 14px;
+  line-height: 20px;
+}
+body .content .star .star-left .star-left-top {
+  line-height: 30px;
+}
+body .content .star .star-left .star-left-top span {
+  font-size: 14px;
+}
+body .content .star .star-left .star-left-top p {
+  font-family: "Barlow Condensed", sans-serif;
+  color: #a27638;
+  letter-spacing: 5px;
+  font-size: 12px;
+}
+body .content .star .star-left .star-left-top h2 {
+  font-size: 36px;
+  font-family: "Gilda Display", serif;
+  margin-top: 10px;
+}
+body .content .star .star-left .bar-star {
+  color: #a27638;
 }
 
 * {
@@ -250,7 +306,6 @@ body::-webkit-scrollbar-thumb:hover {
   grid-template-columns: repeat(6, 1fr);
   gap: 17px;
   font-family: "Barlow", sans-serif;
-  margin: 10px;
 }
 .chambres .chambres1, .chambres .chambres2, .chambres .chambres3 {
   grid-column: span 2;
@@ -264,10 +319,125 @@ body::-webkit-scrollbar-thumb:hover {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
   font-family: "Barlow", sans-serif;
+  color: rgb(255, 255, 255);
+  margin: 10px;
+}
+.spa h2 {
+  font-size: 30px;
+}
+.spa .text {
+  margin: 10px;
+}
+.spa p {
+  color: #8e6731;
+  font-size: 15px;
+  padding: 20px;
+}
+.spa a {
+  color: wheat;
+  background-color: #8e6731;
+  padding: 10px;
+}
+
+.Options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 50px;
+  color: white;
+  gap: 10px;
+  height: 300px;
+  margin: 10px;
+  padding: 10px;
+}
+.Options .opt {
+  font-size: 15px;
+  font-family: "Barlow Condensed", sans-serif;
+}
+.Options .opt H2 {
+  font-size: 50px;
+  padding: 20px;
+}
+.Options .opt .flaticon-call,
+.Options .opt a {
+  color: #8e6731;
+  font-size: 25px;
+  margin: 10px;
+}
+.Options .box1 {
+  background-color: #303030;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  font-size: 15px;
+  width: 300px;
+  font-family: "Barlow Condensed", sans-serif;
+}
+.Options .box1 p {
+  font-size: 3em;
+  color: #8e6731;
+}
+.Options .box1 .ti-check, .Options .box1 .ti-close {
+  color: #8e6731;
+  margin: 10px;
+}
+.Options .box2 {
+  background-color: #303030;
+  padding: 20px;
+  margin: 10px;
+  font-family: "Barlow Condensed", sans-serif;
+  text-align: center;
+  width: 300px;
+}
+.Options .box2 p {
+  font-size: 3em;
+  color: #8e6731;
+}
+.Options .box2 .ti-check, .Options .box2 .ti-close {
+  color: #8e6731;
+  margin: 10px;
+}
+.Options h3 {
+  font-size: 25PX;
+  padding: 10PX;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  margin: 10px;
+  font-family: "Barlow Condensed", sans-serif;
+}
+.grid-container p {
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.grid-container > div {
+  background-color: #303030;
+  font-size: 30px;
+  padding: 20px;
+  margin: 10px;
+  height: 200px;
+  width: 300px;
+  color: white;
+}
+.grid-container > div .flaticon-wifi, .grid-container > div .flaticon-car, .grid-container > div .flaticon-world,
+.grid-container > div .flaticon-swimming, .grid-container > div .flaticon-bed, .grid-container > div .flaticon-breakfast {
+  color: #8e6731;
+  font-size: 2em;
+  padding: 10px;
+}
+
+.h2-enplus {
+  font-size: 40px;
+  padding: 20px;
+  color: white;
 }
 
 .container1 {
   padding: 70px;
+  background-color: #1E1E1E;
 }
 .container1 .chambre-title p {
   font-family: "Barlow Condensed", sans-serif;
@@ -276,7 +446,7 @@ body::-webkit-scrollbar-thumb:hover {
   letter-spacing: 0.3em;
   font-size: 12px;
 }
-.container1 .chambre-title h2 {
+.container1 .chambre-title .h2-tuile {
   font-family: "Gilda Display", serif;
   font-size: 40px;
   color: white;
@@ -284,9 +454,19 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .container1 .tuile {
   position: relative;
+  overflow: hidden;
+}
+.container1 .tuile img {
+  transition: 0.5s ease;
+}
+.container1 .tuile:hover img {
+  transform: scale(1.09);
+  filter: brightness(70%);
+  transition: 1s ease;
 }
 .container1 .tuile figcaption {
   position: absolute;
+  overflow: hidden;
   inset: 0;
   color: #f6f6f6;
   display: flex;
@@ -294,6 +474,30 @@ body::-webkit-scrollbar-thumb:hover {
   font-size: 2em;
   writing-mode: vertical-rl;
   justify-content: space-between;
+}
+.container1 .tuile figcaption .moove-hover {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: all 0.5s ease;
+}
+.container1 .tuile figcaption .moove-hover:hover {
+  transform: translateY(-55px);
+  transition: all 0.5s ease;
+}
+.container1 .tuile figcaption .moove-hover:hover .hidden-hover-left {
+  bottom: 185px;
+  position: absolute;
+  left: 0;
+}
+.container1 .tuile figcaption .moove-hover:hover .hidden-hover-right {
+  bottom: 185px;
+  position: absolute;
+  right: 0;
+}
+.container1 .tuile figcaption .moove-hover:hover h3::after {
+  width: 87.7%;
+  transition: all 1s ease;
 }
 .container1 .tuile figcaption a .reserver {
   position: absolute;
@@ -350,6 +554,7 @@ body::-webkit-scrollbar-thumb:hover {
   background-color: aliceblue;
   left: 0;
   bottom: -12px;
+  transition: 0.5s ease;
 }
 .container1 .tuile figcaption .hidden-hover {
   height: 100%;
@@ -359,7 +564,7 @@ body::-webkit-scrollbar-thumb:hover {
   align-items: flex-end;
   position: absolute;
   justify-content: space-between;
-  top: px;
+  top: 200px;
 }
 .container1 .tuile figcaption .hidden-hover .flaticon {
   display: block;
@@ -367,40 +572,35 @@ body::-webkit-scrollbar-thumb:hover {
   letter-spacing: 1em;
 }
 .container1 .tuile figcaption .hidden-hover .hidden-hover-left {
-  letter-spacing: 13px;
+  letter-spacing: 8px;
   color: rgb(255, 255, 255);
   writing-mode: horizontal-tb;
-  font-size: 14px;
+  font-size: 16px;
+  margin-left: 20px;
 }
 .container1 .tuile figcaption .hidden-hover .hidden-hover-right {
   writing-mode: horizontal-tb;
+  margin-right: 20px;
 }
-.container1 .tuile figcaption .hidden-hover .hidden-hover-right .btn {
+.container1 .tuile figcaption .hidden-hover .hidden-hover-right .btn-tuile {
   color: rgb(255, 255, 255);
-}
-
-.btn {
-  display: block;
-  padding: 15px 20px;
-  background-color: rgb(255, 255, 255);
-  width: -moz-fit-content;
-  width: fit-content;
-  text-decoration: none;
-  margin-top: 30px;
   font-size: 14px;
   font-family: "Barlow Condensed", sans-serif;
-  letter-spacing: 0.25em;
+  letter-spacing: 0.15em;
   display: flex;
   align-items: center;
 }
-.container1 .tuile figcaption .hidden-hover .hidden-hover-right .btn .arrow {
+.container1 .tuile figcaption .hidden-hover .hidden-hover-right .btn-tuile span:hover {
+  color: #a27638;
+}
+.container1 .tuile figcaption .hidden-hover .hidden-hover-right .btn-tuile .arrow {
   background-color: rgb(255, 255, 255);
   height: 0.09em;
   width: 0.4em;
   margin-left: 0.4em;
   position: relative;
 }
-.container1 .tuile figcaption .hidden-hover .hidden-hover-right .btn .arrow::after {
+.container1 .tuile figcaption .hidden-hover .hidden-hover-right .btn-tuile .arrow::after {
   position: absolute;
   content: "";
   background-color: rgb(252, 255, 245);
@@ -411,7 +611,10 @@ body::-webkit-scrollbar-thumb:hover {
   transform: rotate(-45deg);
   transform-origin: right top;
 }
-.container1 .tuile figcaption .hidden-hover .hidden-hover-right .btn .arrow::before {
+.container1 .tuile figcaption .hidden-hover .hidden-hover-right .btn-tuile .arrow::after::after:hover {
+  color: #a27638;
+}
+.container1 .tuile figcaption .hidden-hover .hidden-hover-right .btn-tuile .arrow::before {
   position: absolute;
   content: "";
   background-color: rgb(255, 255, 255);
@@ -422,4 +625,17 @@ body::-webkit-scrollbar-thumb:hover {
   transform: rotate(45deg);
   transform-origin: right bottom;
   border: 0.4em;
+}
+.container1 .tuile figcaption .hidden-hover .hidden-hover-right .btn-tuile .arrow::before::before:hover {
+  color: #a27638;
+}
+
+.btn {
+  display: block;
+  padding: 15px 20px;
+  background-color: rgb(255, 255, 255);
+  width: -moz-fit-content;
+  width: fit-content;
+  text-decoration: none;
+  margin-top: 30px;
 }/*# sourceMappingURL=style.css.map */

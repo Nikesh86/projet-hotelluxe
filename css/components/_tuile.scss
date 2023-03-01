@@ -1,6 +1,7 @@
 .container1 {
 
     padding: 70px;
+    background-color: #1E1E1E;
 
 
     .chambre-title {
@@ -12,7 +13,7 @@
             font-size: 12px;
         }
 
-        h2 {
+        .h2-tuile {
             font-family: 'Gilda Display', serif;
             font-size: 40px;
             color: white;
@@ -21,18 +22,43 @@
     }
 
 
-
+    
 
 
     .tuile {
         position: relative;
+        overflow: hidden;
+        
+        img{
+
+            transition: 0.5s ease;
+        }
+            
+            &:hover img{
+                transform: scale(1.09);
+                -webkit-filter: brightness(70%);
+                filter: brightness(70%);
+                transition: 1s ease;
+            }
+    
+
+        
+        
+        
 
 
+        
+
+        
+
+
+
+        
 
 
         figcaption {
             position: absolute;
-            //overflow: hidden;
+            overflow: hidden;
             inset: 0;
             color: $texte-clare;
             display: flex;
@@ -40,6 +66,42 @@
             font-size: 2em;
             writing-mode: vertical-rl;
             justify-content: space-between;
+           
+            
+
+            
+
+            .moove-hover{
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                transition: all 0.5s ease;
+
+                
+            
+                &:hover {
+                    transform: translateY(-55px);
+                   
+                    transition: all 0.5s ease;
+                }
+                &:hover .hidden-hover-left {
+                    bottom: 185px;
+                    position: absolute;
+                    left:0;
+                    
+                }
+                &:hover .hidden-hover-right {
+                    bottom: 185px;
+                    position: absolute;
+                    right:0;
+                }
+
+                &:hover h3::after{
+                    width: 87.7%;
+                    transition:  all 1s ease ;
+                }
+                
+            }
 
             
 
@@ -112,7 +174,7 @@
                             background-color: aliceblue;
                             left: 0;
                             bottom: -12px;
-                            
+                            transition: 0.5s ease ;
                         }
                     
                     }
@@ -125,7 +187,8 @@
                     align-items: flex-end;
                     position: absolute;
                     justify-content: space-between;
-                    top: px;
+                    top: 200px;
+                    
 
                     
 
@@ -135,26 +198,35 @@
                         letter-spacing:1em;
                         
                         
+                        
                     }
                     .hidden-hover-left{
-                        letter-spacing: 13px;
+                        letter-spacing: 8px;
                         color: rgb(255, 255, 255);
                         writing-mode: horizontal-tb;
-                        font-size: 14px;
+                        font-size: 16px;
+                        margin-left: 20px;
 
                     }
                     
                     
                     .hidden-hover-right{
                         writing-mode: horizontal-tb;
+                        margin-right: 20px;
                         
-                        .btn {
+                        .btn-tuile {
                             color: rgb(255, 255, 255);
                             font-size: 14px;
                             font-family: 'Barlow Condensed', sans-serif;
-                            letter-spacing: 0.25em;
+                            letter-spacing: 0.15em;
                             display: flex;
                             align-items: center;
+
+                            span:hover{
+                                color: #a27638;
+                            }
+
+
 
 
                             
@@ -179,6 +251,10 @@
                                     top: 0em;
                                     transform: rotate(-45deg);
                                     transform-origin: right top;
+
+                                    &::after:hover{
+                                        color: #a27638;
+                                    }
                                     
                                 }
                                 &::before{
@@ -192,6 +268,10 @@
                                     transform: rotate(45deg);
                                     transform-origin: right bottom;
                                     border: 0.4em;
+                                    
+                                    &::before:hover{
+                                        color: #a27638;
+                                    }
                                     
                                     
                                 }
