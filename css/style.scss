@@ -16,21 +16,26 @@
 
 // // import layout//
 @import './layout/body';
-// @import './layout/article';
+@import './layout/article';
 @import './layout/footer';
 @import './layout/header';
+@import './layout/section';
+
+
 // @import './layout/sidebar';
  @import './layout/navbar';
  @import './layout/article';
  @import './layout/grid';
+ 
 
  // import components //
  @import './components/tuile';
- @import './components/button'
+ @import './components/button';
 
-// // import pages //
+ // import page //
+@import './pages/chambres';
+@import './pages/contact';
 
-// @import './pages/product';
 
 
 

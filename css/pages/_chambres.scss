@@ -1,3 +1,120 @@
-.page-chambre {
+body {
+    margin-left: 300px;
+    color: white;
+}
+
+.container{
+    position: relative;
+    text-align: center;
+
+    .centered{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+ }
+ }
+
+
+    .bar-star {
+        color: #8e6731;
+        font-size: 2em;
+    }
+
+    h1 {
+        font-size: 4em;
+        margin-top: 50px;
+    }
+
+    p {
+        font-size: 2em;
+        margin-top: 50px;
+    }
+
+
+
+
+.chambre{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   gap: 10%;
+
+    .ducsman {
+        color: #8e6731;
+    }
+}
+
+.box1 {
+    align-items: center;
+    P {
+        padding: 15px;
+    }
     
 }
+.box2{
+align-items: center;
+.flaticon-group,.flaticon-wifi,.flaticon-breakfast,.flaticon-towel,.flaticon-swimming{
+    color: #8e6731;
+    padding: 10px;
+}
+
+   p{
+    padding: 5px;
+    margin: 5px;
+   }
+    h2{
+        font-size: 2em;
+        padding: 10px;
+        margin: 10px;
+    }
+       
+}
+.checkin{
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 10px;
+    h3{
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+    .ti-check{
+        color: #8e6731;
+    }
+}
+
+.Instructions,.Animaux,.Enfants{
+    margin-top: 10px;
+    margin: 10px;
+    h3{
+        font-size: 25px;
+        padding: 10px;
+    }
+    p{
+        padding: 10px;
+        font-size: 15px;
+    }
+    }
+    a{
+        margin: 10px;
+    }
+
+
+
+
+.footer{
+    margin-top: 10%;
+    
+}
+
+@media screen and (max-width :391px){ 
+    header{
+        min-height: 50vh;
+        width: 100%;
+    }
+   
+
+    
+}
+

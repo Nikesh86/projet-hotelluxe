@@ -1,0 +1,36 @@
+.info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    .box1 {
+        margin: 10px;
+        margin-bottom: 30px;
+
+        .flaticon-call,
+        .num-tel,
+        .ti-email,
+        .flaticon-location-pin {
+            color: #8e6731;
+            font-size: 25px;
+            padding: 10px;
+        }
+
+        p {
+            font-size: 25px;
+        }
+    }
+
+    .box2 {
+        text-align: center;
+    }
+
+}
+
+.map {
+    margin: 10px;
+    padding: 10px;
+}
+
+@media screen and (max-width: 600px) {
+   
+  }
